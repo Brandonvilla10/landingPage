@@ -1,0 +1,41 @@
+*{
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    transition: 1s;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    height: 60px;
+}
+
+.logoDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nombreEmpresa{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.lista{
+    display: flex;
+    list-style: none;
+    width: clamp(500px, 100%, 1222px);
+}
+
+li{
+    font-weight:500;
+    font-size: 1.5em;
+    width: auto;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+li:hover{
+    color: #FF9011;
+    font-weight: bold;
+    transition: 0.1s;
+}
