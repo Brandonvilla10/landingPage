@@ -6,6 +6,7 @@ import personitas from "./assets/personitas.png";
 import Topics from "./components/topics";
 import { loupe, microphone, monitor, paper } from "./assets/icons/iconos";
 import hombre from "./assets/retrato.png";
+import Solutions from "./components/solutions";
 
 function App() {
   return (
@@ -82,27 +83,31 @@ function App() {
           <h1 className="simpleSolutions">
             Simple <span style={{ color: "#FF9011" }}>Solutions!</span>
           </h1>
-          <p style={{ color: "gray", fontSize: "1.5em", fontWeight: "normal" }}>
+          <p className="subtituloSolutions" style={{ color: "gray", fontSize: "1.5em", fontWeight: "normal" }}>
             We undestand that no two busisness are alike. Thats why we take the
             time to undestarnd
           </p>
 
           <div className="divSolutions">
-            
-            <div className="divN">
-              <p className="n">1</p>
-              <p className="n">2</p>
-              <p className="n">3</p>
-              <p className="n">4</p>
-            </div>
 
-            <div className="solutionsTopics">
-
-              
-
-            </div>
-
-          </div>
+            <Solutions 
+            numero = "1"
+            tittle = "Contact us"
+            description = "Contact us to boost your brand visibily"/>
+            <Solutions 
+            numero = "2"
+            tittle = "Consult"
+            description = "Always avabalible to answer your questions"/>
+            <Solutions 
+            numero = "3"
+            tittle = "Place order"
+            description = "Buy our package today to proceed"/>
+            <Solutions 
+            numero = "4"
+            tittle = "Payment"
+            description = "We receives payments in all types of banking"/>
+          
+          </div> {/* aqui finaliza el divSolutions */}
         </div>
       </section>
     </>

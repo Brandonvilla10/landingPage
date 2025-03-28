@@ -1,0 +1,22 @@
+.mainSolutionsDiv{
+    width: 100%;
+    height: 70px;
+    display: flex;
+}
+
+.divN{
+    background-color: #FF9011;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(0.9rem, 1.8vw, 2rem);
+    font-weight: 700;
+    color: white;
+}
+
+.solutionsTopics{
+   margin-left: 2vw;
+}

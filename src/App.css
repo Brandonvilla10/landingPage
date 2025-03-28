@@ -110,3 +110,11 @@ body {
   align-items: left;
 }
 
+.subtituloSolutions{
+  width: clamp(200px, 100% ,500px);
+}
+
+.divSolutions{
+  display: flex;
+  flex-direction: column;
+}
