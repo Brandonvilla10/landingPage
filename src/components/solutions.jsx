@@ -11,7 +11,7 @@ function Solutions(props) {
 
       <div className="solutionsTopics">
         <h1 style={{margin:"unset"}}>{props.tittle}</h1>
-        <p style={{margin:"unset", color:"grey"}}>{props.description}</p>
+        <p className="description" style={{margin:"unset", color:"grey"}}>{props.description}</p>
       </div>
     </div>
     </>

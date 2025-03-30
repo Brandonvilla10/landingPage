@@ -23,12 +23,11 @@ nav{
 .lista{
     display: flex;
     list-style: none;
-    width: clamp(500px, 100%, 1222px);
 }
 
 li{
     font-weight:500;
-    font-size: 1.5em;
+    font-size: clamp(0.9rem, 2vw,1.5rem)    ;
     width: auto;
     margin-left: 2%;
     margin-right: 2%;
@@ -39,3 +38,22 @@ li:hover{
     font-weight: bold;
     transition: 0.1s;
 }
+
+@media(width >= 320px) AND (width <= 720px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .lista{
+        padding-left: unset;
+        justify-content: center;
+    }
+    
+    li{
+        margin-left: unset;
+    }
+}
+

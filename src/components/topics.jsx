@@ -11,7 +11,7 @@ function Topics(props){
                 </div>
                 <div style={{paddingLeft:"2em", paddingRight:"2em", textAlign:"left"}}>
                     <h1 className="tituloTopic">{props.tituloTopic}</h1>
-                    <p style={{color:"gray", marginTop:"unset"}}>{props.descripcionTopic}</p>
+                    <p style={{color:"gray", marginTop:"unset" , fontSize:"0.9rem" }}>{props.descripcionTopic}</p>
                 </div>
             </div>
         </>

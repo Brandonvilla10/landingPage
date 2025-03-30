@@ -1,9 +1,10 @@
 .topic{
     
-    width: 100%;
-    height: 75%;
+    width: 275px;
+    height: clamp(100px,100%, 210px);
     box-shadow: 0px 3px 50px 1.1px #00000066;
     border-radius: 15px;
+    padding-bottom: 10px;
 }
 
 .topic:hover{
@@ -21,7 +22,7 @@
     height: 40%;
     display: flex;
     justify-content: center;
-    
+   
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 15px;
     border-top-right-radius: 30px;
@@ -32,5 +33,13 @@
 .tituloTopic{
     margin: unset;
     font-size: clamp(1em, 4vw, 1.7em);
+
+}
+
+@media(width >= 320px) AND (width <= 768px) {
+
+    .topic{
+        width: 265px;
+    }
 
 }

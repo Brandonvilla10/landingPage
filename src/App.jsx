@@ -7,19 +7,22 @@ import Topics from "./components/topics";
 import { loupe, microphone, monitor, paper } from "./assets/icons/iconos";
 import hombre from "./assets/retrato.png";
 import Solutions from "./components/solutions";
+import logo from "./assets/logo.png";
 
 function App() {
   return (
     <>
       <Navbar />
-
       <section className="main">
         <div className="columnaIzquierda">
           <h1 className="tituloMain">
             We create <span style={{ color: "#FF9011" }}>solutions</span> for
             your business
           </h1>
-          <p style={{ color: "gray", fontSize: "1.5em", fontWeight: "normal" }}>
+          <p
+            className="mainDescription"
+            style={{ color: "gray", fontWeight: "normal" }}
+          >
             Our team keep a keen eye on emerging trends and technologies to
             ensure your marketing campaings remain cutting-edge
           </p>
@@ -30,7 +33,6 @@ function App() {
           <img src={personitas} className="personitas" alt="" />
         </div>
       </section>
-
       <section className="section2">
         <div className="servicios">
           <h1 className="tituloServicios">
@@ -74,7 +76,6 @@ function App() {
           />
         </div>
       </section>
-
       <section className="section3">
         <div className="section3Izquierda">
           <img src={hombre} className="retrato" alt="" />
@@ -83,43 +84,66 @@ function App() {
           <h1 className="simpleSolutions">
             Simple <span style={{ color: "#FF9011" }}>Solutions!</span>
           </h1>
-          <p className="subtituloSolutions" style={{ color: "gray", fontSize: "1.5em", fontWeight: "normal" }}>
+          <p
+            className="subtituloSolutions"
+            style={{ color: "gray", fontWeight: "normal" }}
+          >
             We undestand that no two busisness are alike. Thats why we take the
             time to undestarnd
           </p>
-
           <div className="divSolutions">
-
-            <Solutions 
-            numero = "1"
-            tittle = "Contact us"
-            description = "Contact us to boost your brand visibily"/>
-            <Solutions 
-            numero = "2"
-            tittle = "Consult"
-            description = "Always avabalible to answer your questions"/>
-            <Solutions 
-            numero = "3"
-            tittle = "Place order"
-            description = "Buy our package today to proceed"/>
-            <Solutions 
-            numero = "4"
-            tittle = "Payment"
-            description = "We receives payments in all types of banking"/>
-          
-          </div> {/* aqui finaliza el divSolutions */}
+            <Solutions
+              numero="1"
+              tittle="Contact us"
+              description="Contact us to boost your brand visibily"
+            />
+            <Solutions
+              numero="2"
+              tittle="Consult"
+              description="Always avabalible to answer your questions"
+            />
+            <Solutions
+              numero="3"
+              tittle="Place order"
+              description="Buy our package today to proceed"
+            />
+            <Solutions
+              numero="4"
+              tittle="Payment"
+              description="We receives payments in all types of banking"
+            />
+          </div>{" "}
+          {/* aqui finaliza el divSolutions */}
         </div>
-      </section> {/* Aqui finaliza la secrtion 3*/}
-
+      </section>{" "}
+      {/* Aqui finaliza la secrtion 3*/}
       <section className="section4">
+        <h1 style={{ fontSize: "3rem" }}>
+          Our <span style={{ color: "#FF9011" }}>Argency</span>
+        </h1>
 
-        <h1 style={{fontSize:"3rem" }}>Our <span style={{ color: "#FF9011"}}>Argency</span></h1>
+        <p className="subtituloSection4">
+          We believe in the power of data. Our analytics-driven approach allows
+          us to make informed. Decisions and optimize your marketing efforts for
+          maximum RO!, Lets turn your data into actionable insights, Tailored
+          solutions for your Business
+        </p>
 
-        <p className="subtituloSection4">We believe in the power of data. Our analytics-driven approach allows us to make informed.
-        Decisions and optimize your marketing efforts for maximum RO!, Lets turn your data into actionable insights, Tailored solutions for your Business</p>
-
-        <div className="readyTo"><h1 style={{color:"white"}}> Ready To Get Started </h1></div>
+        <div className="readyTo">
+          <h1 style={{ color: "white" }}> Ready To Get Started </h1>
+        </div>
       </section>
+
+      <div style={{display: "flex", flexDirection: "row", alignItems:"center"}}>
+        <img src={logo} className="logo" width={70} height={70} alt="" />
+        <b className="nombreEmpresa" style={{ color: "#575454" }}>
+          BrandBuzz
+        </b>
+      </div>
+
+      <footer>
+        <p>BrandBuzz™ – Copyright 2025. Inspire, create, protect.</p>
+      </footer>
     </>
   );
 }
