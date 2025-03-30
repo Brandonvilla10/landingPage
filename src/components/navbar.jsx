@@ -13,11 +13,11 @@ function Navbar(){
                 
                 <div style={{width:"100%"}}>
                     <ul className="lista">
-                        <li>Home</li>
-                        <li>About Us</li>
-                        <li>Services</li>
-                        <li>Contact Us</li>
-                        <li>Blog</li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact us</a></li>
+                        <li><a href="#blog">Blog</a></li>
                     </ul>
                 </div>
             </nav>

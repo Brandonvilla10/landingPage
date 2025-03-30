@@ -5,6 +5,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @keyframes aparecer {
   from{
     opacity: 0;
@@ -18,6 +22,7 @@ body {
 
 
 .main {
+  margin-top: 150px;
   width: 100%;
   display: flex;
 }

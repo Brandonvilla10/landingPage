@@ -1,9 +1,17 @@
 *{
     font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-    transition: 1s;
+    transition: 0.5s;
+}
+a{
+    text-decoration: none;
+    color: unset;
+    transition: 0.5s;
 }
 
 nav{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
     display: flex;
     width: 100%;
     height: 60px;
@@ -35,7 +43,7 @@ li{
 
 li:hover{
     color: #FF9011;
-    font-weight: bold;
+    font-size: larger;
     transition: 0.1s;
 }
 

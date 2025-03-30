@@ -13,7 +13,8 @@ function App() {
   return (
     <>
       <Navbar />
-      <section className="main">
+      <section id="home" style={{height:"10px"}}></section>
+      <section className="main" >
         <div className="columnaIzquierda">
           <h1 className="tituloMain">
             We create <span style={{ color: "#FF9011" }}>solutions</span> for
@@ -33,7 +34,10 @@ function App() {
           <img src={personitas} className="personitas" alt="" />
         </div>
       </section>
-      <section className="section2">
+
+      <section id="about" style={{height:"0px"}}></section>
+
+      <section className="section2" >
         <div className="servicios">
           <h1 className="tituloServicios">
             We Provide The Best{" "}
@@ -71,11 +75,14 @@ function App() {
           <Topics
             icono={paper}
             color="#C51D07"
-            tituloTopic="Marketing"
+            tituloTopic="Solutions"
             descripcionTopic="Loreim ipsum has been the industry strandsd dumuy text ever since the 1500s  "
           />
         </div>
       </section>
+
+      <section id="services" style={{height:"100px"}}></section>
+
       <section className="section3">
         <div className="section3Izquierda">
           <img src={hombre} className="retrato" alt="" />
@@ -117,6 +124,9 @@ function App() {
         </div>
       </section>{" "}
       {/* Aqui finaliza la secrtion 3*/}
+
+      <section id="contact" style={{height:"80px"}}></section>
+      
       <section className="section4">
         <h1 style={{ fontSize: "3rem" }}>
           Our <span style={{ color: "#FF9011" }}>Argency</span>
